@@ -1,0 +1,679 @@
+// #brand-collaboration {
+//     height: 20rem;
+//     margin-top: 10rem;
+
+//     .section-container{
+//         display: flex;
+//         flex-direction: column;
+//         gap: 1rem;
+        
+
+
+//         .heading{
+            
+//             display: flex;
+//             justify-content: space-between;
+
+//             h2{
+//                 font-size: .9rem;
+//                 font-family: 'Jost', sans-serif;
+//                 text-transform: uppercase;
+//                 letter-spacing: .3ch;
+//             }
+
+//             a {
+//                 font-style: italic;
+//                 color: $black-color;
+//                 font-size: 1.1rem;
+//                 transition: all 200ms ease-in-out;
+
+//                 div{
+//                     width: auto;
+//                     height: 1px;
+//                     background: $gray-color;
+//                     margin-top: .1rem;
+//                 }
+                
+//             }
+
+//             a:hover { 
+//                 color: $gray-color;
+//             }
+
+            
+            
+           
+//         }
+
+//         .chevrons {
+//             display: flex;
+//             align-self: flex-end;
+//             gap: .8rem;
+
+
+//             .chevron{
+//                 font-size: 1.4rem;
+//                 color: $black-color;
+//             }
+//         }
+
+//         .image-container{
+//             width: 100%;
+//             display: grid;
+//             grid-auto-flow: column;
+//             height: 300px;
+//             overflow: hidden;
+//             scroll-behavior: smooth;
+            
+//             .article-group {
+//                 display: grid;
+//                 grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+//                 grid-gap: 1rem;
+
+//                 .article-thumbnail {
+//                     display: flex;
+//                     flex-direction: column;
+//                     font-family: 'Baskervville', serif;
+
+//                     h4{
+//                         // font-family: 'Libre Baskerville', serif;
+//                         padding-top: .5rem;
+//                         font-size: 1.2rem;
+//                     }
+
+//                     img {
+//                         max-width: 100%;
+//                         height: 50%;
+//                         object-fit: cover;
+//                         margin-bottom: 1rem;
+//                     }
+
+//                 }
+                
+//             }
+
+//             .group-2{
+//                 display: none;
+//             }
+//         }
+//     }
+// }
+
+
+
+#brand-collaboration{
+
+    height: 20rem;
+    margin-top: 10rem;
+
+    .section-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+       
+        .heading{
+            display: flex;
+            justify-content: space-between;
+
+            h2{
+                font-size: .9rem;
+                font-family: 'Jost', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: .3ch;
+            }
+
+            a {
+                font-style: italic;
+                color: $black-color;
+                font-size: 1.1rem;
+                transition: all 200ms ease-in-out;
+
+                div{
+                    width: auto;
+                    height: 1px;
+                    background: $gray-color;
+                    margin-top: .1rem;
+                }
+                
+            }
+
+            a:hover { 
+                color: $gray-color;
+            }
+
+            
+            
+           
+        }
+        
+        
+        .chevrons {
+            display: flex;
+            align-self: flex-end;
+            gap: .8rem;
+
+            .pagination{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: solid 1px $gray-color;
+                margin-top: 5px;
+
+            }
+
+            .active {
+                background: $gray-color;
+            }
+
+
+
+
+            .chevron{
+                font-size: 1.4rem;
+                color: $black-color;
+                cursor: pointer;
+            }
+
+            .active-chevron {
+                background: $black-color;
+            }
+
+            .forward {
+                color: $gray-color;
+                cursor: auto;
+            }
+
+            
+        }
+
+        .image-container{
+            width: 100%;
+            display: grid;
+            grid-auto-flow: column;
+            height: 300px;
+            overflow: hidden;
+            scroll-behavior: smooth;
+
+            
+            
+            .article-group {
+                display: grid;
+                grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+                grid-gap: 1rem;
+
+                a{
+                    .article-thumbnail {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: 'Baskervville', serif;
+                        height: 100%;
+                        transition: all 200ms ease-in-out;
+                        
+                        small {
+                            color: $gray-color;
+                        }
+                        h4{
+                            // font-family: 'Libre Baskerville', serif;
+                            padding-top: .5rem;
+                            font-size: 1.2rem;
+                            color: $black-color;
+                        }
+    
+                        img {
+                            max-width: 100%;
+                            height: 50%;
+                            object-fit: cover;
+                            margin-bottom: 1rem;
+                        }
+    
+                    }
+                }
+
+                .article-thumbnail:hover{
+                    scale: 1.01;
+                }
+                
+            }
+
+        
+            .non-active {
+                display: none;
+            }
+            
+        }
+    }
+}
+
+
+// media queries
+
+
+@media screen and (max-width: 2200px) {
+
+    #brand-collaboration{
+        .container{
+            width: $container-lg;
+            .image-container{
+                width: 100%;
+                display: grid;
+                grid-auto-flow: column;
+                height: 300px;
+                overflow: hidden;
+                scroll-behavior: smooth;
+    
+                
+                
+                .article-group {
+                    display: grid;
+                    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+                    grid-gap: 1rem;
+    
+                    a{
+                        .article-thumbnail {
+                            display: flex;
+                            flex-direction: column;
+                            font-family: 'Baskervville', serif;
+                            height: 300px;
+                            transition: all 200ms ease-in-out;
+                            
+                            small {
+                                color: $gray-color;
+                            }
+                            h4{
+                                // font-family: 'Libre Baskerville', serif;
+                                padding-top: .5rem;
+                                font-size: 1.2rem;
+                                color: $black-color;
+                            }
+        
+                            img {
+                                max-width: 100%;
+                                height: 40%;
+                                object-fit: cover;
+                                margin-bottom: 1rem;
+                            }
+        
+                        }
+                    }
+    
+                    .article-thumbnail:hover{
+                        scale: 1.01;
+                    }
+                    
+                }
+    
+            
+                .non-active {
+                    display: none;
+                }
+                
+            }
+            
+
+        
+        }
+    }
+}
+
+@media screen and (max-width: 1700px) {
+
+    #brand-collaboration{
+        .container{
+            width: $container-sm;
+            .image-container{
+                width: 100%;
+                display: grid;
+                grid-auto-flow: column;
+                height: 300px;
+                overflow: hidden;
+                scroll-behavior: smooth;
+    
+                
+                
+                .article-group {
+                    display: grid;
+                    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+                    grid-gap: 1rem;
+    
+                    a{
+                        .article-thumbnail {
+                            display: flex;
+                            flex-direction: column;
+                            font-family: 'Baskervville', serif;
+                            height: 100%;
+                            transition: all 200ms ease-in-out;
+                            
+                            small {
+                                color: $gray-color;
+                            }
+                            h4{
+                                // font-family: 'Libre Baskerville', serif;
+                                padding-top: .5rem;
+                                font-size: 1.1rem;
+                                color: $black-color;
+                            }
+        
+                            img {
+                                max-width: 100%;
+                                height: 40%;
+                                object-fit: cover;
+                                margin-bottom: 1rem;
+                            }
+        
+                        }
+                    }
+    
+                    .article-thumbnail:hover{
+                        scale: 1.01;
+                    }
+                    
+                }
+    
+            
+                .non-active {
+                    display: none;
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #brand-collaboration{
+
+        height: 25rem;
+        margin-top: 10rem;
+
+        .container{
+            width: $container-md;
+           
+            .image-container{
+                width: 100%;
+                display: grid;
+                grid-auto-flow: column;
+                height: fit-content;
+                overflow: hidden;
+                scroll-behavior: smooth;
+                
+    
+                
+                
+                .article-group {
+                    grid-template-columns: repeat( 4, minmax(100px, 1fr) );
+                    grid-gap: 1rem;
+    
+                    a{
+                        .article-thumbnail {
+                            display: flex;
+                            flex-direction: column;
+                            font-family: 'Baskervville', serif;
+                            height: 200px;
+                            padding-bottom: 2rem;
+                            transition: all 200ms ease-in-out;
+                            
+                            
+                            small {
+                                color: $gray-color;
+                            }
+                            h4{
+                                // font-family: 'Libre Baskerville', serif;
+                                padding-top: .5rem;
+                                font-size: 1rem;
+                                color: $black-color;
+                            }
+        
+                            img {
+                                max-width: 100%;
+                                height: 80%;
+                                object-fit: cover;
+                                margin-bottom: 1rem;
+                            }
+        
+                        }
+                    }
+    
+                    .article-thumbnail:hover{
+                        scale: 1.01;
+                    }
+                    
+                }
+    
+            
+                .non-active {
+                    display: none;
+                }
+                
+            }
+
+
+        
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #brand-collaboration{
+
+        height: 25rem;
+        margin-top: 10rem;
+        
+        .container{
+            width: $container-md;
+            
+
+            .image-container{
+                width: 100%;
+                display: grid;
+                grid-auto-flow: column;
+                height: fit-content;
+                overflow: hidden;
+                scroll-behavior: smooth;
+                
+    
+                
+                
+                .article-group {
+                    grid-template-columns: repeat( 4, minmax(100px, 1fr) );
+                    grid-gap: 1rem;
+    
+                    a{
+                        .article-thumbnail {
+                            display: flex;
+                            flex-direction: column;
+                            font-family: 'Baskervville', serif;
+                            height: 200px;
+                            padding-bottom: 2rem;
+                            transition: all 200ms ease-in-out;
+                            
+                            
+                            small {
+                                color: $gray-color;
+                            }
+                            h4{
+                                // font-family: 'Libre Baskerville', serif;
+                                padding-top: .5rem;
+                                font-size: 1rem;
+                                color: $black-color;
+                            }
+        
+                            img {
+                                max-width: 100%;
+                                height: 70%;
+                                object-fit: cover;
+                                margin-bottom: 1rem;
+                            }
+        
+                        }
+                    }
+    
+                    .article-thumbnail:hover{
+                        scale: 1.01;
+                    }
+                    
+                }
+    
+            
+                .non-active {
+                    display: none;
+                }
+                
+            }
+
+
+        
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    #brand-collaboration{
+
+        height: 25rem;
+        margin-top: 10rem;
+        
+        .container{
+            width: $container-md;
+            
+
+            .image-container{
+                width: 100%;
+                display: grid;
+                grid-auto-flow: column;
+                height: fit-content;
+                overflow: hidden;
+                scroll-behavior: smooth;
+                
+    
+                
+                
+                .article-group {
+                    grid-template-columns: repeat( 3, minmax(100px, 1fr) );
+                    grid-gap: 1rem;
+    
+                    a{
+                        .article-thumbnail {
+                            display: flex;
+                            flex-direction: column;
+                            font-family: 'Baskervville', serif;
+                            height: 200px;
+                            padding-bottom: 2rem;
+                            transition: all 200ms ease-in-out;
+                            
+                            
+                            small {
+                                color: $gray-color;
+                            }
+                            h4{
+                                // font-family: 'Libre Baskerville', serif;
+                                padding-top: .5rem;
+                                font-size: 1rem;
+                                color: $black-color;
+                            }
+        
+                            img {
+                                max-width: 100%;
+                                height: 70%;
+                                object-fit: cover;
+                                margin-bottom: 1rem;
+                            }
+        
+                        }
+                    }
+    
+                    .article-thumbnail:hover{
+                        scale: 1.01;
+                    }
+                    
+                }
+    
+            
+                .non-active {
+                    display: none;
+                }
+                
+            }
+
+
+        
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #brand-collaboration{
+
+        height: 40rem;
+        margin-top: 10rem;
+        
+        .container{
+            width: $container-md;
+            
+
+            .image-container{
+                width: 100%;
+                display: grid;
+                grid-auto-flow: column;
+                height: fit-content;
+                overflow: hidden;
+                scroll-behavior: smooth;
+                
+    
+                
+                
+                .article-group {
+                    grid-template-columns: repeat( 2, minmax(100px, 1fr) );
+                    grid-gap: 1rem;
+    
+                    a{
+                        .article-thumbnail {
+                            display: flex;
+                            flex-direction: column;
+                            font-family: 'Baskervville', serif;
+                            height: 200px;
+                            padding-bottom: 2rem;
+                            transition: all 200ms ease-in-out;
+                            
+                            
+                            small {
+                                color: $gray-color;
+                            }
+                            h4{
+                                // font-family: 'Libre Baskerville', serif;
+                                padding-top: .5rem;
+                                font-size: 1rem;
+                                color: $black-color;
+                            }
+        
+                            img {
+                                max-width: 100%;
+                                height: 70%;
+                                object-fit: cover;
+                                margin-bottom: 1rem;
+                            }
+        
+                        }
+                    }
+    
+                    .article-thumbnail:hover{
+                        scale: 1.01;
+                    }
+                    
+                }
+    
+            
+                .non-active {
+                    display: none;
+                }
+                
+            }
+
+
+        
+        }
+    }
+}

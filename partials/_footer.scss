@@ -1,0 +1,211 @@
+
+.footer-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 10rem;
+
+    .quick-links{
+
+        display: flex;
+        gap: 1rem;
+
+        a {
+        font-family: 'Jost', sans-serif;
+        font-size: .8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .3ch;
+        color: $black-color;
+        }
+
+        a:hover {
+            color: $gray-color;
+        }
+        
+
+    }
+
+    .social {
+        display: flex;
+        gap: 1rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+        .social-icon{
+            transition: all 400ms ease;
+        }
+
+        .social-icon:hover{
+            color: $gray-color;
+        }
+
+    }
+
+    .note {
+        max-width: 70%;
+
+        p{
+            line-height: 3rem;
+            text-align: center;
+            font-family: 'Baskervville', serif;
+            font-size: 1.2rem;
+            color: $gray-color;
+            a {
+                color: $gray-color;
+                text-decoration: underline;
+            }
+
+            a:hover {
+                color: (lighten($color: $gray-color, $amount: 10));
+            }
+        }
+    }
+
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    .footer-elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 10rem;
+    
+        .quick-links{
+    
+            display: flex;
+            gap: 1rem;
+    
+            a {
+            font-family: 'Jost', sans-serif;
+            font-size: .8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: .3ch;
+            color: $black-color;
+            }
+    
+            a:hover {
+                color: $gray-color;
+            }
+            
+    
+        }
+    
+        .social {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+    
+            .social-icon{
+                transition: all 400ms ease;
+            }
+    
+            .social-icon:hover{
+                color: $gray-color;
+            }
+    
+        }
+    
+        .note {
+            max-width: 80%;
+    
+            p{
+                line-height: 3rem;
+                text-align: center;
+                font-family: 'Baskervville', serif;
+                font-size: 1.2rem;
+                color: $gray-color;
+                a {
+                    color: $gray-color;
+                    text-decoration: underline;
+                }
+    
+                a:hover {
+                    color: (lighten($color: $gray-color, $amount: 10));
+                }
+            }
+        }
+    
+        
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+
+    .footer-elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 10rem;
+    
+        .quick-links{
+    
+            display: flex;
+            gap: 1rem;
+    
+            a {
+            font-family: 'Jost', sans-serif;
+            font-size: .8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: .3ch;
+            color: $black-color;
+            }
+    
+            a:hover {
+                color: $gray-color;
+            }
+            
+    
+        }
+    
+        .social {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+    
+            .social-icon{
+                transition: all 400ms ease;
+            }
+    
+            .social-icon:hover{
+                color: $gray-color;
+            }
+    
+        }
+    
+        .note {
+            max-width: 90%;
+    
+            p{
+                line-height: 2rem;
+                text-align: center;
+                font-family: 'Baskervville', serif;
+                font-size: 1rem;
+                color: $gray-color;
+                
+                a {
+                    color: $gray-color;
+                    text-decoration: underline;
+                }
+    
+                a:hover {
+                    color: (lighten($color: $gray-color, $amount: 10));
+                }
+            }
+        }
+    
+        
+    }
+    
+}

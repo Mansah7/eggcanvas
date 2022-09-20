@@ -1,0 +1,356 @@
+
+#last-section{
+     margin: 10rem auto;
+
+    .last-section-container {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        width: $container-lg;
+
+        .line {
+            width: 100%;
+            height: 2px;
+            background: $gray-color;
+            margin-top: .1rem;
+        }
+
+        small {
+            font-style: italic;
+            color: $black-color;
+            font-size: 1.1rem;
+            transition: all 200ms ease-in-out;
+        }
+
+        a {
+            font-size: 2.2rem;
+            font-weight: 500;
+            font-family: 'Jost', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: .3ch;
+            color: $black-color;
+
+            div{
+                width: auto;
+                height: 1px;
+                background: $gray-color;
+                margin-top: .1rem;
+            }
+        }
+
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: .5rem;
+
+           a {
+            
+            &:hover img{
+                scale: 1.03;
+                box-shadow: 1px 1px 15px 1px rgba($color: #9d9d9d, $alpha: .7);
+            }
+            img {
+                max-width: 100%;
+                min-height: 100%;
+                object-fit: cover;
+                transition: all 400ms ease-in-out;
+                transform-origin: center;
+    
+                }
+           }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1700px) {
+
+    #last-section{
+        margin: 10rem auto;
+   
+       .last-section-container {
+   
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           gap: 3rem;
+           width: $container-sm;
+   
+           .line {
+               width: 100%;
+               height: 2px;
+               background: $gray-color;
+               margin-top: .1rem;
+           }
+   
+           small {
+               font-style: italic;
+               color: $black-color;
+               font-size: 1.1rem;
+               transition: all 200ms ease-in-out;
+           }
+   
+           a {
+               font-size: 2.2rem;
+               font-weight: 500;
+               font-family: 'Jost', sans-serif;
+               text-transform: uppercase;
+               letter-spacing: .3ch;
+               color: $black-color;
+   
+               div{
+                   width: auto;
+                   height: 1px;
+                   background: $gray-color;
+                   margin-top: .1rem;
+               }
+           }
+   
+           .gallery{
+               display: grid;
+               grid-template-columns: repeat(5, 1fr);
+               grid-gap: .5rem;
+   
+              a {
+               
+               &:hover img{
+                   scale: 1.03;
+                   box-shadow: 1px 1px 15px 1px rgba($color: #9d9d9d, $alpha: .7);
+               }
+               img {
+                   max-width: 100%;
+                   min-height: 100%;
+                   object-fit: cover;
+                   transition: all 400ms ease-in-out;
+                   transform-origin: center;
+       
+                   }
+              }
+           }
+   
+       }
+   }
+   
+    
+}
+
+
+@media screen and (max-width: 1200px) {
+
+    #last-section{
+        margin: 10rem auto;
+   
+       .last-section-container {
+   
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           gap: 3rem;
+           width: $container-md;
+   
+           .line {
+               width: 100%;
+               height: 2px;
+               background: $gray-color;
+               margin-top: .1rem;
+           }
+   
+           small {
+               font-style: italic;
+               color: $black-color;
+               font-size: 1.1rem;
+               transition: all 200ms ease-in-out;
+           }
+   
+           a {
+               font-size: 2.2rem;
+               font-weight: 500;
+               font-family: 'Jost', sans-serif;
+               text-transform: uppercase;
+               letter-spacing: .3ch;
+               color: $black-color;
+   
+               div{
+                   width: auto;
+                   height: 1px;
+                   background: $gray-color;
+                   margin-top: .1rem;
+               }
+           }
+   
+           .gallery{
+               display: grid;
+               grid-template-columns: repeat(5, 1fr);
+               grid-gap: .5rem;
+   
+              a {
+               
+               &:hover img{
+                   scale: 1.03;
+                   box-shadow: 1px 1px 15px 1px rgba($color: #9d9d9d, $alpha: .7);
+               }
+               img {
+                   max-width: 100%;
+                   min-height: 100%;
+                   object-fit: cover;
+                   transition: all 400ms ease-in-out;
+                   transform-origin: center;
+       
+                   }
+              }
+           }
+   
+       }
+   }
+   
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    #last-section{
+
+        
+        margin: 10rem auto;
+   
+       .last-section-container {
+   
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           gap: 3rem;
+           width: $container-md;
+   
+           .line {
+               width: 100%;
+               height: 2px;
+               background: $gray-color;
+               margin-top: .1rem;
+           }
+   
+           small {
+               font-style: italic;
+               color: $black-color;
+               font-size: 1.1rem;
+               transition: all 200ms ease-in-out;
+           }
+   
+           a {
+               font-size: 2.2rem;
+               font-weight: 500;
+               font-family: 'Jost', sans-serif;
+               text-transform: uppercase;
+               letter-spacing: .3ch;
+               color: $black-color;
+   
+               div{
+                   width: auto;
+                   height: 1px;
+                   background: $gray-color;
+                   margin-top: .1rem;
+               }
+           }
+   
+           .gallery{
+               display: grid;
+               grid-template-columns: repeat(4, 1fr);
+               grid-gap: .5rem;
+   
+              a {
+               
+               &:hover img{
+                   scale: 1.03;
+                   box-shadow: 1px 1px 15px 1px rgba($color: #9d9d9d, $alpha: .7);
+               }
+               img {
+                   max-width: 100%;
+                   min-height: 100%;
+                   object-fit: cover;
+                   transition: all 400ms ease-in-out;
+                   transform-origin: center;
+       
+                   }
+              }
+           }
+   
+       }
+   }
+   
+    
+}
+
+
+@media screen and (max-width: 500px) {
+
+    #last-section{
+
+        
+        margin: 10rem auto;
+   
+       .last-section-container {
+   
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           gap: 3rem;
+           width: $container-md;
+   
+           .line {
+               width: 100%;
+               height: 2px;
+               background: $gray-color;
+               margin-top: .1rem;
+           }
+   
+           small {
+               font-style: italic;
+               color: $black-color;
+               font-size: 1.1rem;
+               transition: all 200ms ease-in-out;
+           }
+   
+           a {
+               font-size: 2.2rem;
+               font-weight: 500;
+               font-family: 'Jost', sans-serif;
+               text-transform: uppercase;
+               letter-spacing: .3ch;
+               color: $black-color;
+   
+               div{
+                   width: auto;
+                   height: 1px;
+                   background: $gray-color;
+                   margin-top: .1rem;
+               }
+           }
+   
+           .gallery{
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+               grid-gap: .5rem;
+   
+              a {
+               
+               &:hover img{
+                   scale: 1.03;
+                   box-shadow: 1px 1px 15px 1px rgba($color: #9d9d9d, $alpha: .7);
+               }
+               img {
+                   max-width: 100%;
+                   min-height: 100%;
+                   object-fit: cover;
+                   transition: all 400ms ease-in-out;
+                   transform-origin: center;
+       
+                   }
+              }
+           }
+   
+       }
+   }
+   
+    
+}
