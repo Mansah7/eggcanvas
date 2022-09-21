@@ -128,7 +128,8 @@
         align-items: center;
         width: 100%;
         height: 40vh;
-        background: url(../images/superegg-sound-renewal-1.jpg) no-repeat top/cover;
+        background: url(../images/superegg-sound-renewal-1.jpg) no-repeat center/contain;
+        background-size: 30%;
         background-attachment: fixed;
         margin-top: 10rem;
         
@@ -144,6 +145,8 @@
                 font-style: italic;
                 font-size: 1.1rem;
                 padding-bottom: .5rem;
+                max-width: 90%;
+                text-align: center;
             }
     
             h1{
@@ -152,6 +155,8 @@
                 text-transform: uppercase;
                 letter-spacing: .3ch;
                 margin-bottom: 2rem;
+                max-width: 90%;
+                text-align: center;
             }
     
             button.bnt-stroke{

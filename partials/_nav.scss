@@ -372,6 +372,19 @@ nav {
                width: 0%;  
                background-color: #939f94;
                padding-top: 10rem;
+               animation: navanimation 500ms ease-in-out forwards;
+            
+               @keyframes navanimation {
+   
+                   0%{
+                       width: 0%;
+                   }
+   
+                   100%{
+                       width: 50%;
+                   }
+                   
+               }
 
                &::before{
                 content: "";
@@ -455,6 +468,23 @@ nav {
                width: 0%;
                background-color: #939f94;
                padding-top: 10rem;
+
+               animation: navanimation 500ms ease-in-out forwards;
+              
+            
+               @keyframes navanimation {
+   
+                   0%{
+                       width: 0%;
+                   }
+   
+                   100%{
+                       width: 57%;
+                   }
+                   
+               }
+
+
                &::before{
                 content: "";
                 display: flex;
@@ -526,7 +556,7 @@ nav {
             ul.nav-items{
                display: flex;
                flex-direction: column;
-               align-items: flex-start;
+               align-items: center;
                position: absolute;
                top: 0;
                left: 0;
@@ -534,13 +564,28 @@ nav {
                width: 0%;
                background-color: #939f94;
                padding-top: 10rem;
+               animation: navanimation 500ms ease-in-out forwards;
+               animation: navanimation2 500ms ease-in-out forwards;
+            
+               @keyframes navanimation {
+   
+                   0%{
+                       width: 0%;
+                   }
+   
+                   100%{
+                       width: 100%;
+                   }
+                   
+               }
+
 
 
             li{
 
             
                 padding-bottom: .5rem;
-                padding-left: 13%;
+                padding-right: 20%;
                 & a {
                     color: $white-color;
                 }
@@ -557,7 +602,7 @@ nav {
             .social{
                position: absolute;
                top: 200%;
-               left: -1%;
+               left: 22%;
                display: flex;
                gap: .5rem;
    
