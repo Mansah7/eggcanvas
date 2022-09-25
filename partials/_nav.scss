@@ -504,8 +504,6 @@ nav {
 
             li{
 
-                
-
                 padding-bottom: .5rem;
                 padding-left: 14%;
                 & a {
@@ -565,7 +563,6 @@ nav {
                background-color: #939f94;
                padding-top: 10rem;
                animation: navanimation 500ms ease-in-out forwards;
-               animation: navanimation2 500ms ease-in-out forwards;
             
                @keyframes navanimation {
    
@@ -579,11 +576,8 @@ nav {
                    
                }
 
-
-
             li{
 
-            
                 padding-bottom: .5rem;
                 padding-right: 20%;
                 & a {

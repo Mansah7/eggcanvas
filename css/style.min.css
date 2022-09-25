@@ -413,8 +413,6 @@ nav div .mob-only {
     padding-top: 10rem;
     -webkit-animation: navanimation 500ms ease-in-out forwards;
             animation: navanimation 500ms ease-in-out forwards;
-    -webkit-animation: navanimation2 500ms ease-in-out forwards;
-            animation: navanimation2 500ms ease-in-out forwards;
   }
   @-webkit-keyframes navanimation {
     0% {
@@ -988,7 +986,7 @@ header .section-container .image-container .non-active {
     align-items: center;
     width: 100%;
     height: 40vh;
-    background: url(../images/superegg-sound-renewal-1.jpg) no-repeat center/100%;
+    background: url(../images/superegg-sound-renewal-1.jpg) no-repeat center/cover;
     background-attachment: fixed;
     margin-top: 10rem;
   }
@@ -2244,62 +2242,227 @@ header .section-container .image-container .non-active {
     display: none;
   }
 }
-#changing-section {
-  margin: 10rem auto;
+.changing-section {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
-#changing-section .section-container {
-  height: 60vh;
-}
-#changing-section .section-container .image-container {
+.changing-section .section-container {
   display: flex;
-  gap: 2rem;
-  max-width: 100%;
+  gap: 3rem;
 }
-#changing-section .section-container .image-container .article-group {
-  display: grid;
-  grid-template-rows: repeat(auto-fit minmax(200px, 1fr));
-  margin-bottom: 5rem;
+.changing-section .section-container .content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
-#changing-section .section-container .image-container .article-group h2 {
+.changing-section .section-container .content .title h1 {
   font-size: 0.9rem;
   font-family: "Jost", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.3ch;
-  margin-bottom: 4rem;
 }
-#changing-section .section-container .image-container .article-group .article-thumbnail {
+.changing-section .section-container .content a .article-thumbnail {
   display: flex;
-  gap: 3rem;
-  max-width: 100%;
-  margin-bottom: 3rem;
+  flex-direction: row;
+  font-family: "Baskervville", serif;
+  gap: 2rem;
+  transition: all 200ms ease-in-out;
 }
-#changing-section .section-container .image-container .article-group .article-thumbnail .description h4 {
-  font-weight: 300;
-  padding-top: 0.5rem;
-  font-size: 1.2rem;
-}
-#changing-section .section-container .image-container .article-group .article-thumbnail img {
-  width: 200px;
+.changing-section .section-container .content a .article-thumbnail img {
+  width: 250px;
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#changing-section .section-container .image-container a {
+.changing-section .section-container .content a .article-thumbnail .description h4 {
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #231f20;
+}
+.changing-section .section-container .content a .article-thumbnail .description small {
+  color: #cfceca;
+}
+.changing-section .section-container .content a .article-thumbnail:hover {
+  scale: 1.01;
+}
+.changing-section .section-container .content .bottom-link a {
   font-style: italic;
   color: #231f20;
   font-size: 1.1rem;
   transition: all 200ms ease-in-out;
+  display: inline-block;
 }
-#changing-section .section-container .image-container a div {
-  width: 22%;
+.changing-section .section-container .content .bottom-link a div {
+  width: auto;
   height: 1px;
   background: #cfceca;
   margin-top: 0.1rem;
 }
-#changing-section .section-container .image-container a:hover {
+.changing-section .section-container .content .bottom-link a:hover {
   color: #cfceca;
 }
 
+@media screen and (max-width: 1700px) {
+  .changing-section {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .changing-section .section-container {
+    width: 70%;
+    display: flex;
+    gap: 3rem;
+  }
+  .changing-section .section-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .changing-section .section-container .content .title h1 {
+    font-size: 0.9rem;
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+  }
+  .changing-section .section-container .content a .article-thumbnail {
+    display: flex;
+    flex-direction: row;
+    font-family: "Baskervville", serif;
+    gap: 2rem;
+    transition: all 200ms ease-in-out;
+  }
+  .changing-section .section-container .content a .article-thumbnail img {
+    max-width: 50%;
+  }
+  .changing-section .section-container .content a .article-thumbnail .description h4 {
+    padding-top: 0.5rem;
+    font-size: 1.2rem;
+    color: #231f20;
+  }
+  .changing-section .section-container .content a .article-thumbnail .description small {
+    color: #cfceca;
+  }
+  .changing-section .section-container .content a .article-thumbnail:hover {
+    scale: 1.01;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .changing-section {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .changing-section .section-container {
+    width: 90%;
+    display: flex;
+    gap: 3rem;
+  }
+  .changing-section .section-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .changing-section .section-container .content .title h1 {
+    font-size: 0.9rem;
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+  }
+  .changing-section .section-container .content a .article-thumbnail {
+    display: flex;
+    flex-direction: row;
+    font-family: "Baskervville", serif;
+    gap: 2rem;
+    transition: all 200ms ease-in-out;
+  }
+  .changing-section .section-container .content a .article-thumbnail img {
+    max-width: 50%;
+  }
+  .changing-section .section-container .content a .article-thumbnail .description h4 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    color: #231f20;
+  }
+  .changing-section .section-container .content a .article-thumbnail .description small {
+    color: #cfceca;
+  }
+  .changing-section .section-container .content a .article-thumbnail:hover {
+    scale: 1.01;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .changing-section {
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+  }
+  .changing-section .section-container {
+    width: 90%;
+    display: flex;
+    gap: 3rem;
+  }
+  .changing-section .section-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .changing-section .section-container .content .title h1 {
+    font-size: 0.9rem;
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+  }
+  .changing-section .section-container .content a .article-thumbnail {
+    display: flex;
+    flex-direction: row;
+    font-family: "Baskervville", serif;
+    gap: 2rem;
+    transition: all 200ms ease-in-out;
+  }
+  .changing-section .section-container .content a .article-thumbnail img {
+    max-width: 55%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .changing-section {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .changing-section .section-container {
+    width: 90%;
+    display: flex;
+    gap: 3rem;
+  }
+  .changing-section .section-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .changing-section .section-container .content .title h1 {
+    font-size: 0.9rem;
+    font-family: "Jost", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+  }
+  .changing-section .section-container .content a .article-thumbnail {
+    display: flex;
+    flex-direction: column;
+    font-family: "Baskervville", serif;
+    gap: 1rem;
+    transition: all 200ms ease-in-out;
+  }
+  .changing-section .section-container .content a .article-thumbnail img {
+    max-width: 100%;
+  }
+  .changing-section .section-container .content a .article-thumbnail .description {
+    width: 100%;
+  }
+  .changing-section .section-container .content a .article-thumbnail .description h4 {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    color: #231f20;
+  }
+  .changing-section .section-container .content a .article-thumbnail .description small {
+    color: #cfceca;
+  }
+}
 .nyc-guide {
   display: flex;
   justify-content: center;
