@@ -3662,3 +3662,551 @@ header .section-container .image-container .non-active {
     color: #e7e7e5;
   }
 }
+.section-content {
+  margin-top: 20rem;
+  margin-bottom: 10rem;
+}
+.section-content .back-home {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.section-content .back-home a {
+  transition: all 400ms ease-in-out;
+}
+.section-content .back-home a:hover {
+  font-size: 1.3rem;
+  color: #cfceca;
+}
+.section-content .heading {
+  text-align: center;
+}
+.section-content .heading small {
+  font-family: "Baskervville", serif;
+  font-style: italic;
+  color: #cfceca;
+}
+.section-content .heading h1 {
+  font-family: "Baskervville", serif;
+  font-size: 2.5rem;
+  padding: 3rem 0;
+}
+.section-content .img-box {
+  display: flex;
+  gap: 2rem;
+  max-width: 100%;
+  margin-bottom: 3rem;
+}
+.section-content .img-box img {
+  max-width: 100%;
+}
+.section-content .img-box * a {
+  display: inline-block;
+  font-family: "Baskervville", serif;
+  color: #231f20;
+  font-size: 0.8rem;
+  transition: all 200ms ease-in-out;
+  margin-top: 1rem;
+}
+.section-content .img-box * a:hover {
+  color: #cfceca;
+}
+.section-content .img-box * a > div {
+  width: 100%;
+  background-color: #cfceca;
+  height: 1px;
+}
+.section-content .box-4, .section-content .box-6, .section-content .box-9 {
+  flex-direction: column;
+  gap: 0;
+}
+.section-content p {
+  font-family: "Baskervville", serif;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+.section-content p.third-p {
+  margin-bottom: 0;
+}
+.section-content .p-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.section-content .p-links a {
+  color: #231f20;
+  font-family: "Baskervville", serif;
+  text-decoration: underline;
+  transition: all 400ms ease-in-out;
+}
+.section-content .p-links a:hover {
+  color: #cfceca;
+}
+.section-content .bottom-link {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.section-content .bottom-link a {
+  color: #cfceca;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.section-content .bottom-link a h4 {
+  color: #231f20;
+  font-size: 1.5rem;
+  font-family: "Baskervville", serif;
+}
+.section-content .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 10rem;
+}
+.section-content .social h4 {
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2ch;
+  font-style: italic;
+}
+.section-content .social .social-links {
+  display: flex;
+  gap: 3rem;
+  cursor: pointer;
+}
+.section-content .social .social-links .facebook {
+  color: #3b5998;
+  transition: all 400ms ease-in-out;
+}
+.section-content .social .social-links .facebook:hover {
+  scale: 1.1;
+}
+.section-content .social .social-links .twitter {
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  padding: 5px;
+  background-color: #56acee;
+  color: #fcfcfc;
+  border-radius: 50%;
+  font-size: 2px;
+  transition: all 400ms ease-in-out;
+}
+.section-content .social .social-links .twitter:hover {
+  scale: 1.1;
+}
+.section-content .social .social-links .linkedin {
+  color: #0976b4;
+  transition: all 400ms ease-in-out;
+}
+.section-content .social .social-links .linkedin:hover {
+  scale: 1.1;
+}
+.section-content .social .social-links .tumble {
+  color: #35465d;
+  transition: all 400ms ease-in-out;
+}
+.section-content .social .social-links .tumble:hover {
+  scale: 1.1;
+}
+.section-content .social .social-links .pinterest {
+  color: #cc2128;
+  transition: all 400ms ease-in-out;
+}
+.section-content .social .social-links .pinterest:hover {
+  scale: 1.1;
+}
+
+@media screen and (max-width: 1700px) {
+  .container {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section-content {
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+  }
+  .section-content .heading {
+    text-align: center;
+  }
+  .section-content .heading small {
+    font-family: "Baskervville", serif;
+    font-style: italic;
+    color: #cfceca;
+  }
+  .section-content .heading h1 {
+    font-family: "Baskervville", serif;
+    font-size: 2.2rem;
+    padding: 3rem 0;
+  }
+  .section-content .img-box {
+    display: flex;
+    gap: 1rem;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .section-content .img-box img {
+    max-width: 100%;
+  }
+  .section-content .img-box * a {
+    display: inline-block;
+    font-family: "Baskervville", serif;
+    color: #231f20;
+    font-size: 0.8rem;
+    transition: all 200ms ease-in-out;
+    margin-top: 0.5rem;
+  }
+  .section-content .img-box * a:hover {
+    color: #cfceca;
+  }
+  .section-content .img-box * a > div {
+    width: 100%;
+    background-color: #cfceca;
+    height: 1px;
+  }
+  .section-content .box-4, .section-content .box-6, .section-content .box-9 {
+    flex-direction: column;
+    gap: 0;
+  }
+  .section-content .bottom-link {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+  }
+  .section-content .bottom-link a {
+    color: #cfceca;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
+#skincare_routine {
+  margin-top: 20rem;
+}
+#skincare_routine .back-home {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+#skincare_routine .back-home a {
+  transition: all 400ms ease-in-out;
+}
+#skincare_routine .back-home a:hover {
+  font-size: 1.3rem;
+  color: #cfceca;
+}
+#skincare_routine .heading {
+  text-align: center;
+}
+#skincare_routine .heading small {
+  font-family: "Baskervville", serif;
+  font-style: italic;
+  color: #cfceca;
+}
+#skincare_routine .heading h1 {
+  font-family: "Baskervville", serif;
+  font-size: 2.5rem;
+  padding: 3rem 0;
+}
+#skincare_routine .updat-info {
+  font-family: "Baskervville", serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  text-align: center;
+}
+#skincare_routine .updat-info p {
+  margin-bottom: 2rem;
+}
+#skincare_routine .updat-info a {
+  color: #231f20;
+  text-decoration: underline;
+  transition: all 400ms ease-in-out;
+}
+#skincare_routine .updat-info a:hover {
+  color: #cfceca;
+}
+#skincare_routine .paragraph {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  font-family: "Baskervville", serif;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+#skincare_routine .image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+#skincare_routine .image-box img {
+  max-width: 48%;
+}
+
+.second .section-container .routines {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.second .section-container .routines .daytime, .second .section-container .routines .nighttime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.second .section-container .routines .daytime h4, .second .section-container .routines .nighttime h4 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.5ch;
+}
+.second .section-container .routines .daytime p, .second .section-container .routines .nighttime p {
+  font-family: "Baskervville", serif;
+}
+.second .section-container .products p:first-child {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Baskervville", serif;
+  font-size: 1.3rem;
+}
+.second .section-container .products .cleanser h3, .second .section-container .products .toner h3 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 0.3ch;
+}
+.second .section-container .products .cleanser .p-1, .second .section-container .products .cleanser .p_1, .second .section-container .products .toner .p-1, .second .section-container .products .toner .p_1 {
+  font-family: "Baskervville", serif;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.second .section-container .products .cleanser .product, .second .section-container .products .toner .product {
+  display: flex;
+  flex-direction: column;
+}
+.second .section-container .products .cleanser .product h4, .second .section-container .products .toner .product h4 {
+  font-family: "Jost", sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: 0.3ch;
+}
+.second .section-container .products .cleanser .product p, .second .section-container .products .toner .product p {
+  font-family: "Baskervville", serif;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.second .section-container .products .cleanser .product small, .second .section-container .products .toner .product small {
+  font-family: "Jost", sans-serif;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.3ch;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.second .section-container .products .cleanser .product div, .second .section-container .products .toner .product div {
+  text-align: center;
+  font-family: "Baskervville", serif;
+  font-size: 1.2rem;
+}
+.second .section-container .products .cleanser .product div a, .second .section-container .products .toner .product div a {
+  color: #231f20;
+  display: inline-block;
+  transition: all 400ms ease-in-out;
+}
+.second .section-container .products .cleanser .product div a:hover, .second .section-container .products .toner .product div a:hover {
+  color: #cfceca;
+}
+.second .section-container .products .cleanser .product div a div, .second .section-container .products .toner .product div a div {
+  width: 100%;
+  height: 1px;
+  background-color: #cfceca;
+}
+.second .section-container .products p.thanks {
+  font-family: "Baskervville", serif;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.second .section-container .products p.thanks a {
+  color: #231f20;
+  transition: all 400ms ease-in-out;
+  text-decoration: underline;
+}
+.second .section-container .products p.thanks a:hover {
+  color: #cfceca;
+}
+.second .section-container .products .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-top: 10rem;
+}
+.second .section-container .products .social h4 {
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2ch;
+  font-style: italic;
+}
+.second .section-container .products .social .social-links {
+  display: flex;
+  gap: 3rem;
+  cursor: pointer;
+}
+.second .section-container .products .social .social-links .facebook {
+  color: #3b5998;
+  transition: all 400ms ease-in-out;
+}
+.second .section-container .products .social .social-links .facebook:hover {
+  scale: 1.1;
+}
+.second .section-container .products .social .social-links .twitter {
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  padding: 5px;
+  background-color: #56acee;
+  color: #fcfcfc;
+  border-radius: 50%;
+  font-size: 2px;
+  transition: all 400ms ease-in-out;
+}
+.second .section-container .products .social .social-links .twitter:hover {
+  scale: 1.1;
+}
+.second .section-container .products .social .social-links .linkedin {
+  color: #0976b4;
+  transition: all 400ms ease-in-out;
+}
+.second .section-container .products .social .social-links .linkedin:hover {
+  scale: 1.1;
+}
+.second .section-container .products .social .social-links .tumble {
+  color: #35465d;
+  transition: all 400ms ease-in-out;
+}
+.second .section-container .products .social .social-links .tumble:hover {
+  scale: 1.1;
+}
+.second .section-container .products .social .social-links .pinterest {
+  color: #cc2128;
+  transition: all 400ms ease-in-out;
+}
+.second .section-container .products .social .social-links .pinterest:hover {
+  scale: 1.1;
+}
+.second .section-container .article_carrousel {
+  margin: 4rem auto;
+  width: 70%;
+  overflow: hidden;
+  height: 20rem;
+}
+.second .section-container .article_carrousel h4 {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 0.1ch;
+  color: #cfceca;
+}
+.second .section-container .article_carrousel h4 span {
+  color: #231f20;
+}
+.second .section-container .article_carrousel .image_carrousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.5%;
+  width: 240%;
+}
+.second .section-container .article_carrousel .image_carrousel .article_thumnail {
+  max-width: 400px;
+  height: 75%;
+  border: 1px solid #cfceca;
+  border-radius: 4% 4% 2% 2%;
+  transition: all 400ms ease-in-out;
+  transform-origin: bottom;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+}
+.second .section-container .article_carrousel .image_carrousel .article_thumnail ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background-color: #231f20;
+  border-radius: 4% 4% 0 0;
+  z-index: 10;
+  opacity: 0.1;
+}
+.second .section-container .article_carrousel .image_carrousel .article_thumnail:hover {
+  scale: 1.01;
+}
+.second .section-container .article_carrousel .image_carrousel .article_thumnail img {
+  width: 100%;
+  height: 45%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4% 4% 0 0;
+}
+.second .section-container .article_carrousel .image_carrousel .article_thumnail h5 {
+  font-size: 1.03rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1ch;
+  position: absolute;
+  top: 10%;
+  white-space: normal;
+  color: #fcfcfc;
+  padding: 5%;
+  z-index: 200;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.5rem;
+  overflow-y: hidden;
+}
+.second .section-container .article_carrousel .image_carrousel .article_thumnail .article_details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-family: "Baskervville", serif;
+}
+.second .section-container .article_carrousel .image_carrousel .article_thumnail .article_details div {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #cfceca;
+}
+.second .section-container .article_carrousel .image_carrousel .article_thumnail .description {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  line-height: 1.5;
+  font-size: 0.93rem;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}

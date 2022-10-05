@@ -1,0 +1,300 @@
+.section-content{
+    margin-top: 20rem;
+    margin-bottom: 10rem;
+
+    .back-home{
+        cursor: pointer;
+        font-size: 1.2rem;
+
+         a{
+
+            transition: all 400ms ease-in-out;
+
+            &:hover{
+                font-size: 1.3rem;
+                color: $gray-color;
+             }
+
+         }
+         
+    }
+
+    .heading{
+        text-align: center;
+        small{
+            font-family: 'Baskervville', serif;
+            font-style: italic;
+            color: $gray-color;
+    
+        }
+
+        h1{  
+
+            font-family: 'Baskervville', serif;
+            font-size: 2.5rem;
+            padding: 3rem 0;
+
+        }
+    }
+
+    .img-box{
+        display: flex;
+        gap: 2rem;
+        max-width: 100%;
+        margin-bottom: 3rem;
+        img {
+            max-width: 100%;
+
+        }
+
+        & * a{
+            display: inline-block;
+            font-family: 'Baskervville', serif;
+            color: $black-color;
+            font-size: .8rem;
+            transition: all 200ms ease-in-out;
+            margin-top: 1rem;
+
+            &:hover{
+                color: $gray-color;
+            }
+            
+
+            & > div{
+                width: 100%;
+                background-color: $gray-color;
+                height: 1px;
+
+            }
+        }
+    }
+
+    .box-4, .box-6, .box-9{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    p{
+        font-family: 'Baskervville', serif;
+        margin-bottom: 2rem; 
+        line-height: 1.5;
+        
+    }
+
+    p.third-p{
+        margin-bottom: 0;
+    }
+
+    .p-links{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        
+        
+        &  a{
+            color: $black-color;
+            font-family: 'Baskervville', serif;
+            text-decoration: underline;
+            transition: all 400ms ease-in-out;
+
+            &:hover{
+                color: $gray-color;
+            }
+            
+
+        }
+    }
+
+    .bottom-link{
+        margin-top: 10rem;
+        display: flex;
+        justify-content: flex-end;
+
+        a{
+            color: $gray-color;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            h4{
+                color: $black-color;
+                font-size: 1.5rem;
+                font-family: 'Baskervville', serif;
+            }
+        }
+        
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        margin-top: 10rem;
+
+        h4{
+            margin-bottom: 3rem;
+            font-size: 1.3rem;
+            font-family: 'Jost', sans-serif;
+            font-weight: 400;
+            letter-spacing: .2ch;
+            font-style: italic;
+        }
+        
+       .social-links{
+
+        display: flex;
+        gap: 3rem;
+        cursor: pointer;
+        .facebook{
+            color: #3b5998;
+            transition: all 400ms ease-in-out;
+
+            &:hover{
+                scale: 1.1;
+            }
+        }
+        .twitter{
+            box-sizing: border-box;
+            width: 14px;
+            height: 14px;
+            padding: 5px;
+            background-color: #56acee;
+            color: $white-color;
+            border-radius: 50%;
+            font-size: 2px;
+            transition: all 400ms ease-in-out;
+
+            &:hover{
+                scale: 1.1;
+            }
+            
+        }
+
+        .linkedin{
+            color: #0976b4;
+            transition: all 400ms ease-in-out;
+
+            &:hover{
+                scale: 1.1;
+            }
+
+        }
+
+        .tumble{
+            color: #35465d;
+            transition: all 400ms ease-in-out;
+
+            &:hover{
+                scale: 1.1;
+            }
+        }
+
+        .pinterest{
+            color: 
+            #cc2128;
+            transition: all 400ms ease-in-out;
+
+            &:hover{
+                scale: 1.1;
+            }
+        }
+       }
+    }
+
+    
+}
+
+@media screen and (max-width: 1700px) {
+    .container{
+        width: $container-sm;
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: $container-md;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .section-content{
+        margin-top: 15rem;
+        margin-bottom: 10rem;
+    
+        .heading{
+            text-align: center;
+            small{
+                font-family: 'Baskervville', serif;
+                font-style: italic;
+                color: $gray-color;
+        
+            }
+    
+            h1{  
+    
+                font-family: 'Baskervville', serif;
+                font-size: 2.2rem;
+                padding: 3rem 0;
+    
+            }
+        }
+    
+        .img-box{
+            display: flex;
+            gap: 1rem;
+            max-width: 100%;
+            margin-bottom: 1.5rem;
+            img {
+                max-width: 100%;
+    
+            }
+    
+            & * a{
+                display: inline-block;
+                font-family: 'Baskervville', serif;
+                color: $black-color;
+                font-size: .8rem;
+                transition: all 200ms ease-in-out;
+                margin-top: .5rem;
+    
+                &:hover{
+                    color: $gray-color;
+                }
+                
+    
+                & > div{
+                    width: 100%;
+                    background-color: $gray-color;
+                    height: 1px;
+    
+                }
+            }
+        }
+    
+        .box-4, .box-6, .box-9{
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .bottom-link{
+            margin-top: 10rem;
+            display: flex;
+            justify-content: center;
+            
+    
+            a{
+                color: $gray-color;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                align-items: center;
+            }
+            
+        }
+    }
+    
+}

@@ -1,0 +1,406 @@
+#skincare_routine{
+    margin-top: 20rem;
+
+
+    .back-home{
+        cursor: pointer;
+        font-size: 1.2rem;
+
+         a{
+
+            transition: all 400ms ease-in-out;
+
+            &:hover{
+                font-size: 1.3rem;
+                color: $gray-color;
+             }
+
+         }
+         
+    }
+
+    .heading{
+        text-align: center;
+        small{
+            font-family: 'Baskervville', serif;
+            font-style: italic;
+            color: $gray-color;
+    
+        }
+
+        h1{  
+
+            font-family: 'Baskervville', serif;
+            font-size: 2.5rem;
+            padding: 3rem 0;
+
+        }
+    }
+
+    .updat-info{
+        font-family: 'Baskervville', serif;
+        font-style: italic;
+        font-size: 1.3rem;
+        text-align: center;
+        
+        p{
+            margin-bottom: 2rem;
+        }
+        a{
+            color: $black-color;
+            text-decoration: underline;
+            transition: all 400ms ease-in-out;
+            &:hover{
+                color: $gray-color;
+            }
+        }
+
+    }
+
+    .paragraph{
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        font-family: 'Baskervville', serif;
+        line-height: 1.8;
+        font-size: 1.2rem;
+    }
+
+    .image-box{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+
+        img {
+            max-width: 48%;
+        }
+    }
+}
+
+.second{
+    .section-container{
+        .routines{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10%;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+
+            .daytime, .nighttime{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                h4{
+                    font-family: 'Jost', sans-serif;
+                    font-size: 1.1rem;
+                    letter-spacing: .5ch;
+                }
+
+                p{
+                    font-family: 'Baskervville', serif; 
+                }
+
+            }
+        }
+
+        .products{
+            p:first-child{
+                text-align: center;
+                margin-bottom: 2rem;
+                font-family: 'Baskervville', serif;
+                font-size: 1.3rem;
+            }
+
+            .cleanser, .toner{
+                h3{
+                    font-family: 'Jost', sans-serif;
+                    font-size: 1.7rem; 
+                    text-align: center;
+                    margin-bottom: 3rem;
+                    letter-spacing: .3ch;
+                }
+                .p-1, .p_1{
+                    font-family: 'Baskervville', serif;
+                    font-size: 1.3rem;
+                    margin-bottom: 3rem;
+                    line-height: 1.8;
+
+                }
+
+                .product{
+                    display: flex;
+                    flex-direction: column;
+
+                    h4{
+                        font-family: 'Jost', sans-serif;
+                        font-size: 1.7rem; 
+                        text-align: center;
+                        margin-bottom: 3rem;
+                        letter-spacing: .3ch;
+
+                    }
+
+                    p{
+                        font-family: 'Baskervville', serif;
+                        font-size: 1.3rem;
+                        margin-bottom: 3rem;
+                        line-height: 1.8;
+                    }
+
+                    small{
+                        font-family: 'Jost', sans-serif;
+                        font-size: .8rem; 
+                        font-style: italic;
+                        letter-spacing: .3ch;
+                        text-align: center;
+                        margin-bottom: 2rem;
+                    }
+
+                    div{
+                        text-align: center;
+                        font-family: 'Baskervville', serif;
+                        font-size: 1.2rem;
+
+                        a{
+                            color: $black-color;
+                            display: inline-block;
+                            transition: all 400ms ease-in-out;
+
+                            &:hover{
+                                color: $gray-color;
+                            }
+                            div{
+                                width: 100%;
+                                height: 1px;
+                                background-color: $gray-color;
+
+                            }
+                        }
+                    }
+
+               
+                }
+            }
+
+            p.thanks{
+                font-family: 'Baskervville', serif;
+                font-size: 1.3rem;
+                margin-bottom: 3rem;
+                line-height: 1.8;
+
+                a{
+                    color: $black-color;
+                    transition: all 400ms ease-in-out;
+                    text-decoration: underline;
+
+                    &:hover{
+                        color: $gray-color;
+                    }
+
+                }
+            }
+            .social{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                margin-top: 10rem;
+        
+                h4{
+                    margin-bottom: 3rem;
+                    font-size: 1.3rem;
+                    font-family: 'Jost', sans-serif;
+                    font-weight: 400;
+                    letter-spacing: .2ch;
+                    font-style: italic;
+                }
+                
+               .social-links{
+        
+                display: flex;
+                gap: 3rem;
+                cursor: pointer;
+                .facebook{
+                    color: #3b5998;
+                    transition: all 400ms ease-in-out;
+        
+                    &:hover{
+                        scale: 1.1;
+                    }
+                }
+                .twitter{
+                    box-sizing: border-box;
+                    width: 14px;
+                    height: 14px;
+                    padding: 5px;
+                    background-color: #56acee;
+                    color: $white-color;
+                    border-radius: 50%;
+                    font-size: 2px;
+                    transition: all 400ms ease-in-out;
+        
+                    &:hover{
+                        scale: 1.1;
+                    }
+                    
+                }
+        
+                .linkedin{
+                    color: #0976b4;
+                    transition: all 400ms ease-in-out;
+        
+                    &:hover{
+                        scale: 1.1;
+                    }
+        
+                }
+        
+                .tumble{
+                    color: #35465d;
+                    transition: all 400ms ease-in-out;
+        
+                    &:hover{
+                        scale: 1.1;
+                    }
+                }
+        
+                .pinterest{
+                    color: 
+                    #cc2128;
+                    transition: all 400ms ease-in-out;
+        
+                    &:hover{
+                        scale: 1.1;
+                    }
+                }
+               }
+            }
+
+            
+
+        }
+
+        .article_carrousel{
+            margin: 4rem auto;
+            width: 70%;
+            overflow: hidden;
+            height: 20rem;
+           
+            h4{
+                margin-bottom: 1rem;
+                font-size: .9rem;
+                font-family: 'Jost', sans-serif;
+                letter-spacing: .1ch;
+                color: $gray-color;
+
+                span{
+                    color: $black-color;
+                }
+
+            }
+
+            .image_carrousel{
+                display: grid;
+                grid-auto-flow: column;
+                grid-gap: .5%;
+                width: 240%;
+                
+                
+                
+
+                .article_thumnail{
+                    max-width: 400px;
+                    height: 75%;
+                    border: 1px solid $gray-color;
+                    border-radius: 4% 4% 2% 2%;
+                    transition: all 400ms ease-in-out;
+                    transform-origin: bottom;
+                    cursor: pointer;
+                    position: relative;
+                    background-color: #fff;
+                    
+                    ::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 45%;
+                        background-color: $black-color;
+                        border-radius: 4% 4% 0 0;
+                        z-index: 10;
+                        opacity: .1;
+
+                    }
+                    
+
+                    &:hover{
+                        scale: 1.01;
+                    }
+                    img{
+                        width: 100%;
+                        height: 45%;
+                        object-fit: cover;
+                        border-radius: 4% 4% 0 0;
+                        
+                        
+                    }
+
+                    h5{
+                        font-size: 1.03rem;
+                        font-family: Arial, Helvetica, sans-serif;
+                        letter-spacing: .1ch;
+                        position: absolute;
+                        top: 10%;
+                        white-space: normal ;
+                        color: $white-color;
+                        padding: 5%;
+                        z-index: 200;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        line-height: 1.5rem;
+                        overflow-y: hidden;
+                       
+                        
+
+                    }
+
+                    .article_details{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: .5rem;
+                        padding: .5rem;
+                        font-family: 'Baskervville', serif;
+
+                        div{
+                            width: 5px;
+                            height: 5px;
+                            border-radius: 50%;
+                            background-color: $gray-color;
+                            
+                        }
+                    }
+
+                    .description{
+                        font-family: Arial, Helvetica, sans-serif;
+                        padding-left: .5rem;
+                        padding-right: .5rem;
+                        line-height: 1.5;
+                        font-size: .93rem;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 3;
+
+                    }
+                }
+            }
+        }
+    }
+}
