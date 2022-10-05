@@ -2474,7 +2474,7 @@ header .section-container .image-container .non-active {
   .changing-section .section-container {
     width: 90%;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   }
   .changing-section .section-container .content {
     display: flex;
@@ -2495,7 +2495,7 @@ header .section-container .image-container .non-active {
     transition: all 200ms ease-in-out;
   }
   .changing-section .section-container .content a .article-thumbnail img {
-    width: 190px;
+    width: 100%;
     height: 100px;
   }
   .changing-section .section-container .content a .article-thumbnail .description {
