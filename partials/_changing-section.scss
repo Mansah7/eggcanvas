@@ -361,11 +361,11 @@
             .content{
                 display: flex;
                 flex-direction: column;
-                gap: 3rem;
+                gap: 2rem;
     
                 .title{
                     h1{
-                        font-size: .9rem;
+                        font-size: .8rem;
                         font-family: 'Jost', sans-serif;
                         text-transform: uppercase;
                         letter-spacing: .3ch;
@@ -396,6 +396,7 @@
                                 padding-top: .5rem;
                                 font-size: 1rem;
                                 color: $black-color;
+                                white-space: nowrap;
                                 }
     
                                 small {
@@ -413,3 +414,8 @@
 }
 
 }
+
+
+// Media Queries Small scren
+
+
