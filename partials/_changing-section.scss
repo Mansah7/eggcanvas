@@ -356,7 +356,8 @@
         .section-container{
             width: $container-md;
             display: flex;
-            gap: 2%;
+            flex-direction: column;
+            gap: 3rem;
     
             .content{
                 display: flex;
@@ -377,10 +378,10 @@
                     .article-thumbnail{
     
                             display: flex;
-                            flex-direction: column;
+                            flex-direction: row;
                             font-family: 'Baskervville', serif;
                             // height: 100%;
-                            gap: 1rem;
+                            gap: .7rem;
                             transition: all 200ms ease-in-out;
                             
     
@@ -393,14 +394,13 @@
                             .description{
                                 width: 100%;
                                 h4{
-                                padding-top: .5rem;
+                                padding-top: 1rem;
                                 font-size: .97rem;
                                 color: $black-color;
-                                white-space: nowrap;
-                                display: -webkit-box;
-                                -webkit-line-clamp: 1;
-                                -webkit-box-orient: vertical;
-                                overflow: hidden;
+                                // display: -webkit-box;
+                                // -webkit-line-clamp: 1;
+                                // -webkit-box-orient: vertical;
+                                // overflow: hidden;
                                 
                                 }
     
