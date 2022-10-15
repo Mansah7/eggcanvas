@@ -2490,6 +2490,7 @@ header .section-container .image-container .non-active {
   }
   .changing-section .section-container .content a .article-thumbnail {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     font-family: "Baskervville", serif;
     gap: 0.7rem;
@@ -2497,7 +2498,7 @@ header .section-container .image-container .non-active {
   }
   .changing-section .section-container .content a .article-thumbnail img {
     width: 100%;
-    height: 100px;
+    min-height: 120px;
   }
   .changing-section .section-container .content a .article-thumbnail .description {
     width: 100%;
@@ -4427,6 +4428,348 @@ header .section-container .image-container .non-active {
 .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right input::placeholder {
   text-transform: uppercase;
 }
+.second .section-container .comment-section .comment-section-content .comment-list {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  transition: all 200ms ease;
+  margin-bottom: 2rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .choices {
+  position: absolute;
+  top: 2rem;
+  width: 110px;
+  background-color: #fcfcfc;
+  padding: 0.7rem;
+  border: solid 1px #231f20;
+  display: none;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .choices p:not(:last-child) {
+  padding-bottom: 0.5rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .heading {
+  display: flex;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .heading:hover {
+  opacity: 0.5;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons {
+  display: flex;
+  gap: 1rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .heart {
+  color: #cc2128;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .heart, .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .share-icon {
+  transition: all 200ms ease-in-out;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .heart:hover, .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .share-icon:hover {
+  opacity: 0.5;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content {
+  display: flex;
+  gap: 0.5rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name {
+  display: flex;
+  justify-content: space-between;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .autor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .autor .dot {
+  width: 4px;
+  height: 4px;
+  background-color: #cfceca;
+  border-radius: 50%;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left {
+  display: flex;
+  gap: 0.5rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .expan-button {
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .expan-button .hidden {
+  display: none;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .separater {
+  width: 1px;
+  height: 15px;
+  background-color: #cfceca;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .flag {
+  font-size: 0.7rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .comment {
+  line-height: 1.5;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .chevron {
+  color: gray;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .chevron:hover {
+  color: #231f20;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .separater {
+  width: 1px;
+  height: 15px;
+  background-color: #cfceca;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .dot {
+  width: 4px;
+  height: 4px;
+  background-color: #cfceca;
+  border-radius: 50%;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron p {
+  color: gray;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron p:hover {
+  color: #231f20;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .left {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .left:hover {
+  color: #231f20;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .left .share-icon {
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth {
+  display: flex;
+  gap: 0.5rem;
+  opacity: 0;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .comment-social-icons {
+  color: #f4F4F4;
+  background-color: #cfceca;
+  padding: 0.2rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .comment-social-icons:hover {
+  opacity: 0.7;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .chain {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 300ms ease-in-out;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .chain p:hover {
+  opacity: 0.4;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats {
+  position: absolute;
+  top: -2rem;
+  left: 1.4rem;
+  width: 300px;
+  background-color: #fcfcfc;
+  padding: 1rem;
+  border: 3px solid #cfceca;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  display: none;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats .stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats .stats small {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #cfceca;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats .stats small .dot {
+  width: 4px;
+  height: 4px;
+  background-color: #cfceca;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details {
+  display: flex;
+  justify-content: space-between;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details button {
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  background-color: #0976b4;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details button:hover {
+  background-color: #0b8fdb;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details button a {
+  color: #fcfcfc;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  transition: all 300ms ease-in-out;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right:hover {
+  color: #cfceca;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right a {
+  transition: all 300ms ease-in-out;
+  color: #231f20;
+  font-size: 0.9rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right a:hover {
+  color: #cfceca;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right .right-chevron {
+  font-size: 0.9rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .comments-content .content:hover .left {
+  opacity: 1;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .bottom-line {
+  margin-top: 2rem;
+  width: 100%;
+  height: 1px;
+  background-color: #cfceca;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(154, 170, 190);
+}
+.second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left {
+  display: flex;
+  gap: 1rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content:hover {
+  opacity: 0.4;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content .caution {
+  position: relative;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content .caution .alert {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  color: #fcfcfc;
+  font-size: 0.7rem;
+}
+.second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+.second .section-container .bottom-skip {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.second .section-container .bottom-skip .left, .second .section-container .bottom-skip .right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.second .section-container .bottom-skip .left a, .second .section-container .bottom-skip .right a {
+  color: #cfceca;
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 0.3ch;
+  font-size: 0.9rem;
+  transition: all 400ms ease-in-out;
+  transform-origin: left;
+}
+.second .section-container .bottom-skip .left a:hover, .second .section-container .bottom-skip .right a:hover {
+  scale: 1.04;
+}
+.second .section-container .bottom-skip .left .text, .second .section-container .bottom-skip .right .text {
+  font-family: "Baskervville", serif;
+  font-size: 1.3rem;
+  letter-spacing: 0ch;
+  text-transform: capitalize;
+  color: #231f20;
+}
 
 @media screen and (max-width: 2200px) {
   #skincare_routine {
@@ -5388,6 +5731,855 @@ header .section-container .image-container .non-active {
     -webkit-line-clamp: 3;
   }
 }
+@media screen and (max-width: 800px) {
+  #skincare_routine {
+    margin-top: 20rem;
+  }
+  #skincare_routine .back-home {
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  #skincare_routine .back-home a {
+    transition: all 400ms ease-in-out;
+  }
+  #skincare_routine .back-home a:hover {
+    font-size: 1.3rem;
+    color: #cfceca;
+  }
+  #skincare_routine .heading {
+    text-align: center;
+  }
+  #skincare_routine .heading small {
+    font-family: "Baskervville", serif;
+    font-style: italic;
+    color: #cfceca;
+  }
+  #skincare_routine .heading h1 {
+    font-family: "Baskervville", serif;
+    font-size: 2.5rem;
+    padding: 3rem 0;
+  }
+  #skincare_routine .updat-info {
+    font-family: "Baskervville", serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #skincare_routine .updat-info p {
+    margin-bottom: 2rem;
+  }
+  #skincare_routine .updat-info a {
+    color: #231f20;
+    text-decoration: underline;
+    transition: all 400ms ease-in-out;
+  }
+  #skincare_routine .updat-info a:hover {
+    color: #cfceca;
+  }
+  #skincare_routine .paragraph {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    font-family: "Baskervville", serif;
+    line-height: 1.8;
+    font-size: 1.2rem;
+  }
+  #skincare_routine .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+  }
+  #skincare_routine .image-box img {
+    max-width: 48%;
+  }
+  .second .section-container .routines {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+  .second .section-container .routines .daytime, .second .section-container .routines .nighttime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .second .section-container .routines .daytime h4, .second .section-container .routines .nighttime h4 {
+    font-family: "Jost", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.5ch;
+  }
+  .second .section-container .routines .daytime p, .second .section-container .routines .nighttime p {
+    font-family: "Baskervville", serif;
+  }
+  .second .section-container .products p:first-child {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: "Baskervville", serif;
+    font-size: 1.3rem;
+  }
+  .second .section-container .products .cleanser h3, .second .section-container .products .toner h3 {
+    font-family: "Jost", sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 0.3ch;
+  }
+  .second .section-container .products .cleanser .p-1, .second .section-container .products .cleanser .p_1, .second .section-container .products .toner .p-1, .second .section-container .products .toner .p_1 {
+    font-family: "Baskervville", serif;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+  }
+  .second .section-container .products .cleanser .product, .second .section-container .products .toner .product {
+    display: flex;
+    flex-direction: column;
+  }
+  .second .section-container .products .cleanser .product h4, .second .section-container .products .toner .product h4 {
+    font-family: "Jost", sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 0.3ch;
+  }
+  .second .section-container .products .cleanser .product p, .second .section-container .products .toner .product p {
+    font-family: "Baskervville", serif;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+  }
+  .second .section-container .products .cleanser .product small, .second .section-container .products .toner .product small {
+    font-family: "Jost", sans-serif;
+    font-size: 0.8rem;
+    font-style: italic;
+    letter-spacing: 0.3ch;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .second .section-container .products .cleanser .product div, .second .section-container .products .toner .product div {
+    text-align: center;
+    font-family: "Baskervville", serif;
+    font-size: 1.2rem;
+  }
+  .second .section-container .products .cleanser .product div a, .second .section-container .products .toner .product div a {
+    color: #231f20;
+    display: inline-block;
+    transition: all 400ms ease-in-out;
+  }
+  .second .section-container .products .cleanser .product div a:hover, .second .section-container .products .toner .product div a:hover {
+    color: #cfceca;
+  }
+  .second .section-container .products .cleanser .product div a div, .second .section-container .products .toner .product div a div {
+    width: 100%;
+    height: 1px;
+    background-color: #cfceca;
+  }
+  .second .section-container .products p.thanks {
+    font-family: "Baskervville", serif;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+  }
+  .second .section-container .products p.thanks a {
+    color: #231f20;
+    transition: all 400ms ease-in-out;
+    text-decoration: underline;
+  }
+  .second .section-container .products p.thanks a:hover {
+    color: #cfceca;
+  }
+  .second .section-container .products .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 10rem;
+  }
+  .second .section-container .products .social h4 {
+    margin-bottom: 3rem;
+    font-size: 1.3rem;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2ch;
+    font-style: italic;
+  }
+  .second .section-container .products .social .social-links {
+    display: flex;
+    gap: 3rem;
+    cursor: pointer;
+  }
+  .second .section-container .products .social .social-links .facebook {
+    color: #3b5998;
+    transition: all 400ms ease-in-out;
+  }
+  .second .section-container .products .social .social-links .facebook:hover {
+    scale: 1.1;
+  }
+  .second .section-container .products .social .social-links .twitter {
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    padding: 5px;
+    background-color: #56acee;
+    color: #fcfcfc;
+    border-radius: 50%;
+    font-size: 2px;
+    transition: all 400ms ease-in-out;
+  }
+  .second .section-container .products .social .social-links .twitter:hover {
+    scale: 1.1;
+  }
+  .second .section-container .products .social .social-links .linkedin {
+    color: #0976b4;
+    transition: all 400ms ease-in-out;
+  }
+  .second .section-container .products .social .social-links .linkedin:hover {
+    scale: 1.1;
+  }
+  .second .section-container .products .social .social-links .tumble {
+    color: #35465d;
+    transition: all 400ms ease-in-out;
+  }
+  .second .section-container .products .social .social-links .tumble:hover {
+    scale: 1.1;
+  }
+  .second .section-container .products .social .social-links .pinterest {
+    color: #cc2128;
+    transition: all 400ms ease-in-out;
+  }
+  .second .section-container .products .social .social-links .pinterest:hover {
+    scale: 1.1;
+  }
+  .second .section-container .article_carrousel {
+    margin: 4rem auto;
+    width: 80%;
+    overflow: hidden;
+    height: 20rem;
+  }
+  .second .section-container .article_carrousel h4 {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-family: "Jost", sans-serif;
+    letter-spacing: 0.1ch;
+    color: #cfceca;
+  }
+  .second .section-container .article_carrousel h4 span {
+    color: #231f20;
+  }
+  .second .section-container .article_carrousel .image_carrousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.5%;
+    width: 400%;
+  }
+  .second .section-container .article_carrousel .image_carrousel .article_thumnail {
+    max-width: 400px;
+    height: 75%;
+    border: 1px solid #cfceca;
+    border-radius: 4% 4% 2% 2%;
+    transition: all 400ms ease-in-out;
+    transform-origin: bottom;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+  }
+  .second .section-container .article_carrousel .image_carrousel .article_thumnail ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background-color: #231f20;
+    border-radius: 4% 4% 0 0;
+    z-index: 10;
+    opacity: 0.1;
+  }
+  .second .section-container .article_carrousel .image_carrousel .article_thumnail:hover {
+    scale: 1.01;
+  }
+  .second .section-container .article_carrousel .image_carrousel .article_thumnail img {
+    width: 100%;
+    height: 45%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4% 4% 0 0;
+  }
+  .second .section-container .article_carrousel .image_carrousel .article_thumnail h5 {
+    font-size: 1.03rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1ch;
+    position: absolute;
+    top: 10%;
+    white-space: normal;
+    color: #fcfcfc;
+    padding: 5%;
+    z-index: 200;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: 1.5rem;
+    overflow-y: hidden;
+  }
+  .second .section-container .article_carrousel .image_carrousel .article_thumnail .article_details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-family: "Baskervville", serif;
+  }
+  .second .section-container .article_carrousel .image_carrousel .article_thumnail .article_details div {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #cfceca;
+  }
+  .second .section-container .article_carrousel .image_carrousel .article_thumnail .description {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    line-height: 1.5;
+    font-size: 0.93rem;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .left p {
+    color: #231f20;
+    display: inline-block;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .left div {
+    width: 100%;
+    height: 2px;
+    background-color: #231f20;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .chat-buble {
+    position: relative;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .chat-buble .chat-icon {
+    color: #cc2128;
+    font-size: 1.4rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .chat-buble p {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    color: #fcfcfc;
+    font-size: 0.8rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log .top-element {
+    display: flex;
+    gap: 0.4rem;
+    color: #cfceca;
+    cursor: pointer;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log .top-element .chevron-down {
+    font-size: 0.7rem;
+    align-self: center;
+    cursor: pointer;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log .bottom-element {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    top: 1.5rem;
+    right: 0;
+    z-index: 999;
+    background-color: #fcfcfc;
+    border: 1px solid #231f20;
+    border-radius: 2px;
+    padding: 0.8rem;
+    width: 220%;
+    display: none;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log .bottom-element a {
+    font-size: 0.9rem;
+    color: gray;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log .bottom-element a:hover {
+    color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .bottom {
+    width: 100%;
+    height: 1px;
+    background-color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion {
+    display: flex;
+    width: 60%;
+    margin: 2rem auto;
+    gap: 1%;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input::-moz-placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input:-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input::placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input:focus {
+    border: 1px solid #231f20;
+    border-radius: 3px;
+    padding: 0.7rem 0 200px 0.7rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input:focus::-moz-placeholder {
+    opacity: 0;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input:focus:-ms-input-placeholder {
+    opacity: 0;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input:focus::placeholder {
+    opacity: 0;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line .bottom-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #231f20;
+    border-radius: 2px;
+    background-color: rgba(132, 132, 132, 0.2);
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    display: none;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line .bottom-icons img {
+    width: 10px;
+    height: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line .bottom-icons div.v-bar {
+    width: 1px;
+    height: 10px;
+    background-color: #231f20;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line {
+    display: flex;
+    gap: 3%;
+    width: 100%;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .left {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .left .icons img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .left .icons img:hover {
+    scale: 1.05;
+    opacity: 0.8;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right {
+    flex: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right .text {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right .text .question-mark {
+    font-size: 1.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right input {
+    padding: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right input::-moz-placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right input:-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right input::placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    transition: all 200ms ease;
+    margin-bottom: 2rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .choices {
+    position: absolute;
+    top: 2rem;
+    width: 110px;
+    background-color: #fcfcfc;
+    padding: 0.7rem;
+    border: solid 1px #231f20;
+    display: none;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .choices p:not(:last-child) {
+    padding-bottom: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .heading {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .heading:hover {
+    opacity: 0.5;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons {
+    display: flex;
+    gap: 1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .heart {
+    color: #cc2128;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .heart, .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .share-icon {
+    transition: all 200ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .heart:hover, .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .share-icon:hover {
+    opacity: 0.5;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content img {
+    width: 50px;
+    height: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name {
+    display: flex;
+    justify-content: space-between;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .autor {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .autor .dot {
+    width: 4px;
+    height: 4px;
+    background-color: #cfceca;
+    border-radius: 50%;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .expan-button {
+    cursor: pointer;
+    font-size: 0.7rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .expan-button .hidden {
+    display: none;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .separater {
+    width: 1px;
+    height: 15px;
+    background-color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .flag {
+    font-size: 0.7rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .comment {
+    line-height: 1.5;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .chevron {
+    color: gray;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .chevron:hover {
+    color: #231f20;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .separater {
+    width: 1px;
+    height: 15px;
+    background-color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .dot {
+    width: 4px;
+    height: 4px;
+    background-color: #cfceca;
+    border-radius: 50%;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron p {
+    color: gray;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron p:hover {
+    color: #231f20;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .left {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .left:hover {
+    color: #231f20;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .left .share-icon {
+    font-size: 0.6rem;
+    cursor: pointer;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth {
+    display: flex;
+    gap: 0.5rem;
+    opacity: 0;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .comment-social-icons {
+    color: #f4F4F4;
+    background-color: #cfceca;
+    padding: 0.2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .comment-social-icons:hover {
+    opacity: 0.7;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .chain {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .chain p:hover {
+    opacity: 0.4;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats {
+    position: absolute;
+    top: -2rem;
+    left: 1.4rem;
+    width: 300px;
+    background-color: #fcfcfc;
+    padding: 1rem;
+    border: 3px solid #cfceca;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    display: none;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats img {
+    width: 80px;
+    height: 80px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats .stats small {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats .stats small .dot {
+    width: 4px;
+    height: 4px;
+    background-color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details button {
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    background-color: #0976b4;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details button:hover {
+    background-color: #0b8fdb;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details button a {
+    color: #fcfcfc;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right:hover {
+    color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right a {
+    transition: all 300ms ease-in-out;
+    color: #231f20;
+    font-size: 0.9rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right a:hover {
+    color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right .right-chevron {
+    font-size: 0.9rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content:hover .left {
+    opacity: 1;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .bottom-line {
+    margin-top: 2rem;
+    width: 100%;
+    height: 1px;
+    background-color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(154, 170, 190);
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left {
+    display: flex;
+    gap: 1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content:hover {
+    opacity: 0.4;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content .caution {
+    position: relative;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content .caution .alert {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    color: #fcfcfc;
+    font-size: 0.7rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.3rem;
+  }
+}
 @media screen and (max-width: 600px) {
   #skincare_routine {
     margin-top: 20rem;
@@ -5706,6 +6898,536 @@ header .section-container .image-container .non-active {
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .left p {
+    color: #231f20;
+    display: inline-block;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .left div {
+    width: 100%;
+    height: 2px;
+    background-color: #231f20;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .chat-buble {
+    position: relative;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .chat-buble .chat-icon {
+    color: #cc2128;
+    font-size: 1.4rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .chat-buble p {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    color: #fcfcfc;
+    font-size: 0.8rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log .top-element {
+    display: flex;
+    gap: 0.4rem;
+    color: #cfceca;
+    cursor: pointer;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log .top-element .chevron-down {
+    font-size: 0.7rem;
+    align-self: center;
+    cursor: pointer;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log .bottom-element {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    top: 1.5rem;
+    right: 0;
+    z-index: 999;
+    background-color: #fcfcfc;
+    border: 1px solid #231f20;
+    border-radius: 2px;
+    padding: 0.8rem;
+    width: 220%;
+    display: none;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log .bottom-element a {
+    font-size: 0.9rem;
+    color: gray;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .top .right .log .bottom-element a:hover {
+    color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-number .bottom {
+    width: 100%;
+    height: 1px;
+    background-color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion {
+    display: flex;
+    width: 100%;
+    margin: 2rem auto;
+    gap: 1%;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion img {
+    width: 40px;
+    height: 40px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input::-moz-placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input:-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input::placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input:focus {
+    border: 1px solid #231f20;
+    border-radius: 3px;
+    padding: 0.7rem 0 200px 0.7rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input:focus::-moz-placeholder {
+    opacity: 0;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input:focus:-ms-input-placeholder {
+    opacity: 0;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line input:focus::placeholder {
+    opacity: 0;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line .bottom-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #231f20;
+    border-radius: 2px;
+    background-color: rgba(132, 132, 132, 0.2);
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    display: none;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line .bottom-icons img {
+    width: 10px;
+    height: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .first-line .bottom-icons div.v-bar {
+    width: 1px;
+    height: 10px;
+    background-color: #231f20;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line {
+    display: flex;
+    gap: 3%;
+    width: 100%;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .left {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .left .icons img {
+    width: 30px;
+    height: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .left .icons img:hover {
+    scale: 1.05;
+    opacity: 0.8;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right {
+    flex: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right .text {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right .text .question-mark {
+    font-size: 1.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right input {
+    padding: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right input::-moz-placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right input:-ms-input-placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .discussion .discussion-component .second-line .right input::placeholder {
+    text-transform: uppercase;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    transition: all 200ms ease;
+    margin-bottom: 2rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .choices {
+    position: absolute;
+    top: 2rem;
+    width: 110px;
+    background-color: #fcfcfc;
+    padding: 0.7rem;
+    border: solid 1px #231f20;
+    display: none;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .choices p:not(:last-child) {
+    padding-bottom: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .heading {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .heading:hover {
+    opacity: 0.5;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons {
+    display: flex;
+    gap: 1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .heart {
+    color: #cc2128;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .heart, .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .share-icon {
+    transition: all 200ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .heart:hover, .second .section-container .comment-section .comment-section-content .comment-list .top-line .first-element .icons .share-icon:hover {
+    opacity: 0.5;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content {
+    display: flex;
+    gap: 2%;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content img {
+    width: 10%;
+    height: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 88%;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name {
+    display: flex;
+    justify-content: space-between;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .autor {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .autor .dot {
+    width: 4px;
+    height: 4px;
+    background-color: #cfceca;
+    border-radius: 50%;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .expan-button {
+    cursor: pointer;
+    font-size: 0.7rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .expan-button .hidden {
+    display: none;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .separater {
+    width: 1px;
+    height: 15px;
+    background-color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .name .left .flag {
+    font-size: 0.7rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .comment {
+    line-height: 1.5;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .chevron {
+    color: gray;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .chevron:hover {
+    color: #231f20;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .separater {
+    width: 1px;
+    height: 15px;
+    background-color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .dot {
+    width: 4px;
+    height: 4px;
+    background-color: #cfceca;
+    border-radius: 50%;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron p {
+    color: gray;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron p:hover {
+    color: #231f20;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .left {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .left:hover {
+    color: #231f20;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .left .share-icon {
+    font-size: 0.6rem;
+    cursor: pointer;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth {
+    display: flex;
+    gap: 0.5rem;
+    opacity: 0;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .comment-social-icons {
+    color: #f4F4F4;
+    background-color: #cfceca;
+    padding: 0.2rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .comment-social-icons:hover {
+    opacity: 0.7;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .chain {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .reply .up-down-chevron .share-bottom .rigth .chain p:hover {
+    opacity: 0.4;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats {
+    position: absolute;
+    top: -2rem;
+    left: 1.4rem;
+    width: 300px;
+    background-color: #fcfcfc;
+    padding: 1rem;
+    border: 3px solid #cfceca;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    display: none;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats img {
+    width: 80px;
+    height: 80px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats .stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats .stats small {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .autor-stats .stats small .dot {
+    width: 4px;
+    height: 4px;
+    background-color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details button {
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    background-color: #0976b4;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details button:hover {
+    background-color: #0b8fdb;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details button a {
+    color: #fcfcfc;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right:hover {
+    color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right a {
+    transition: all 300ms ease-in-out;
+    color: #231f20;
+    font-size: 0.9rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right a:hover {
+    color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content .text-content .profil-stats .bottom-details .right .right-chevron {
+    font-size: 0.9rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .comments-content .content:hover .left {
+    opacity: 1;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .bottom-line {
+    margin-top: 2rem;
+    width: 100%;
+    height: 1px;
+    background-color: #cfceca;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(154, 170, 190);
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left {
+    display: flex;
+    gap: 1rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content:hover {
+    opacity: 0.4;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content .caution {
+    position: relative;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content .caution .alert {
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    color: #fcfcfc;
+    font-size: 0.7rem;
+  }
+  .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 500px) {
