@@ -5091,7 +5091,7 @@ header .section-container .image-container .non-active {
     -webkit-line-clamp: 3;
   }
 }
-@media screen and (max-width: 1000px) and (max-width: 2200px) {
+@media screen and (max-width: 1000px) {
   #skincare_routine {
     margin-top: 20rem;
   }
@@ -5730,326 +5730,6 @@ header .section-container .image-container .non-active {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
   }
-}
-@media screen and (max-width: 800px) {
-  #skincare_routine {
-    margin-top: 20rem;
-  }
-  #skincare_routine .back-home {
-    cursor: pointer;
-    font-size: 1.2rem;
-  }
-  #skincare_routine .back-home a {
-    transition: all 400ms ease-in-out;
-  }
-  #skincare_routine .back-home a:hover {
-    font-size: 1.3rem;
-    color: #cfceca;
-  }
-  #skincare_routine .heading {
-    text-align: center;
-  }
-  #skincare_routine .heading small {
-    font-family: "Baskervville", serif;
-    font-style: italic;
-    color: #cfceca;
-  }
-  #skincare_routine .heading h1 {
-    font-family: "Baskervville", serif;
-    font-size: 2.5rem;
-    padding: 3rem 0;
-  }
-  #skincare_routine .updat-info {
-    font-family: "Baskervville", serif;
-    font-style: italic;
-    font-size: 1.3rem;
-    text-align: center;
-  }
-  #skincare_routine .updat-info p {
-    margin-bottom: 2rem;
-  }
-  #skincare_routine .updat-info a {
-    color: #231f20;
-    text-decoration: underline;
-    transition: all 400ms ease-in-out;
-  }
-  #skincare_routine .updat-info a:hover {
-    color: #cfceca;
-  }
-  #skincare_routine .paragraph {
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    font-family: "Baskervville", serif;
-    line-height: 1.8;
-    font-size: 1.2rem;
-  }
-  #skincare_routine .image-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-  }
-  #skincare_routine .image-box img {
-    max-width: 48%;
-  }
-  .second .section-container .routines {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10%;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-  }
-  .second .section-container .routines .daytime, .second .section-container .routines .nighttime {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-  .second .section-container .routines .daytime h4, .second .section-container .routines .nighttime h4 {
-    font-family: "Jost", sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: 0.5ch;
-  }
-  .second .section-container .routines .daytime p, .second .section-container .routines .nighttime p {
-    font-family: "Baskervville", serif;
-  }
-  .second .section-container .products p:first-child {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-family: "Baskervville", serif;
-    font-size: 1.3rem;
-  }
-  .second .section-container .products .cleanser h3, .second .section-container .products .toner h3 {
-    font-family: "Jost", sans-serif;
-    font-size: 1.7rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    letter-spacing: 0.3ch;
-  }
-  .second .section-container .products .cleanser .p-1, .second .section-container .products .cleanser .p_1, .second .section-container .products .toner .p-1, .second .section-container .products .toner .p_1 {
-    font-family: "Baskervville", serif;
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
-    line-height: 1.8;
-  }
-  .second .section-container .products .cleanser .product, .second .section-container .products .toner .product {
-    display: flex;
-    flex-direction: column;
-  }
-  .second .section-container .products .cleanser .product h4, .second .section-container .products .toner .product h4 {
-    font-family: "Jost", sans-serif;
-    font-size: 1.7rem;
-    text-align: center;
-    margin-bottom: 3rem;
-    letter-spacing: 0.3ch;
-  }
-  .second .section-container .products .cleanser .product p, .second .section-container .products .toner .product p {
-    font-family: "Baskervville", serif;
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
-    line-height: 1.8;
-  }
-  .second .section-container .products .cleanser .product small, .second .section-container .products .toner .product small {
-    font-family: "Jost", sans-serif;
-    font-size: 0.8rem;
-    font-style: italic;
-    letter-spacing: 0.3ch;
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  .second .section-container .products .cleanser .product div, .second .section-container .products .toner .product div {
-    text-align: center;
-    font-family: "Baskervville", serif;
-    font-size: 1.2rem;
-  }
-  .second .section-container .products .cleanser .product div a, .second .section-container .products .toner .product div a {
-    color: #231f20;
-    display: inline-block;
-    transition: all 400ms ease-in-out;
-  }
-  .second .section-container .products .cleanser .product div a:hover, .second .section-container .products .toner .product div a:hover {
-    color: #cfceca;
-  }
-  .second .section-container .products .cleanser .product div a div, .second .section-container .products .toner .product div a div {
-    width: 100%;
-    height: 1px;
-    background-color: #cfceca;
-  }
-  .second .section-container .products p.thanks {
-    font-family: "Baskervville", serif;
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
-    line-height: 1.8;
-  }
-  .second .section-container .products p.thanks a {
-    color: #231f20;
-    transition: all 400ms ease-in-out;
-    text-decoration: underline;
-  }
-  .second .section-container .products p.thanks a:hover {
-    color: #cfceca;
-  }
-  .second .section-container .products .social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin-top: 10rem;
-  }
-  .second .section-container .products .social h4 {
-    margin-bottom: 3rem;
-    font-size: 1.3rem;
-    font-family: "Jost", sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.2ch;
-    font-style: italic;
-  }
-  .second .section-container .products .social .social-links {
-    display: flex;
-    gap: 3rem;
-    cursor: pointer;
-  }
-  .second .section-container .products .social .social-links .facebook {
-    color: #3b5998;
-    transition: all 400ms ease-in-out;
-  }
-  .second .section-container .products .social .social-links .facebook:hover {
-    scale: 1.1;
-  }
-  .second .section-container .products .social .social-links .twitter {
-    box-sizing: border-box;
-    width: 14px;
-    height: 14px;
-    padding: 5px;
-    background-color: #56acee;
-    color: #fcfcfc;
-    border-radius: 50%;
-    font-size: 2px;
-    transition: all 400ms ease-in-out;
-  }
-  .second .section-container .products .social .social-links .twitter:hover {
-    scale: 1.1;
-  }
-  .second .section-container .products .social .social-links .linkedin {
-    color: #0976b4;
-    transition: all 400ms ease-in-out;
-  }
-  .second .section-container .products .social .social-links .linkedin:hover {
-    scale: 1.1;
-  }
-  .second .section-container .products .social .social-links .tumble {
-    color: #35465d;
-    transition: all 400ms ease-in-out;
-  }
-  .second .section-container .products .social .social-links .tumble:hover {
-    scale: 1.1;
-  }
-  .second .section-container .products .social .social-links .pinterest {
-    color: #cc2128;
-    transition: all 400ms ease-in-out;
-  }
-  .second .section-container .products .social .social-links .pinterest:hover {
-    scale: 1.1;
-  }
-  .second .section-container .article_carrousel {
-    margin: 4rem auto;
-    width: 80%;
-    overflow: hidden;
-    height: 20rem;
-  }
-  .second .section-container .article_carrousel h4 {
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    font-family: "Jost", sans-serif;
-    letter-spacing: 0.1ch;
-    color: #cfceca;
-  }
-  .second .section-container .article_carrousel h4 span {
-    color: #231f20;
-  }
-  .second .section-container .article_carrousel .image_carrousel {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 0.5%;
-    width: 400%;
-  }
-  .second .section-container .article_carrousel .image_carrousel .article_thumnail {
-    max-width: 400px;
-    height: 75%;
-    border: 1px solid #cfceca;
-    border-radius: 4% 4% 2% 2%;
-    transition: all 400ms ease-in-out;
-    transform-origin: bottom;
-    cursor: pointer;
-    position: relative;
-    background-color: #fff;
-  }
-  .second .section-container .article_carrousel .image_carrousel .article_thumnail ::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 45%;
-    background-color: #231f20;
-    border-radius: 4% 4% 0 0;
-    z-index: 10;
-    opacity: 0.1;
-  }
-  .second .section-container .article_carrousel .image_carrousel .article_thumnail:hover {
-    scale: 1.01;
-  }
-  .second .section-container .article_carrousel .image_carrousel .article_thumnail img {
-    width: 100%;
-    height: 45%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 4% 4% 0 0;
-  }
-  .second .section-container .article_carrousel .image_carrousel .article_thumnail h5 {
-    font-size: 1.03rem;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 0.1ch;
-    position: absolute;
-    top: 10%;
-    white-space: normal;
-    color: #fcfcfc;
-    padding: 5%;
-    z-index: 200;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-height: 1.5rem;
-    overflow-y: hidden;
-  }
-  .second .section-container .article_carrousel .image_carrousel .article_thumnail .article_details {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem;
-    font-family: "Baskervville", serif;
-  }
-  .second .section-container .article_carrousel .image_carrousel .article_thumnail .article_details div {
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background-color: #cfceca;
-  }
-  .second .section-container .article_carrousel .image_carrousel .article_thumnail .description {
-    font-family: Arial, Helvetica, sans-serif;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    line-height: 1.5;
-    font-size: 0.93rem;
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-  }
   .second .section-container .comment-section .comment-section-content .comment-number {
     display: flex;
     flex-direction: column;
@@ -6142,7 +5822,7 @@ header .section-container .image-container .non-active {
   }
   .second .section-container .comment-section .comment-section-content .discussion {
     display: flex;
-    width: 60%;
+    width: 80%;
     margin: 2rem auto;
     gap: 1%;
   }
@@ -6267,7 +5947,7 @@ header .section-container .image-container .non-active {
     text-transform: uppercase;
   }
   .second .section-container .comment-section .comment-section-content .comment-list {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 3rem;
   }
@@ -6578,6 +6258,35 @@ header .section-container .image-container .non-active {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 1.3rem;
+  }
+  .second .section-container .bottom-skip {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .second .section-container .bottom-skip .left, .second .section-container .bottom-skip .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .second .section-container .bottom-skip .left a, .second .section-container .bottom-skip .right a {
+    color: #cfceca;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    letter-spacing: 0.3ch;
+    font-size: 0.9rem;
+    transition: all 400ms ease-in-out;
+    transform-origin: left;
+  }
+  .second .section-container .bottom-skip .left a:hover, .second .section-container .bottom-skip .right a:hover {
+    scale: 1.04;
+  }
+  .second .section-container .bottom-skip .left .text, .second .section-container .bottom-skip .right .text {
+    font-family: "Baskervville", serif;
+    font-size: 1.3rem;
+    letter-spacing: 0ch;
+    text-transform: capitalize;
+    color: #231f20;
   }
 }
 @media screen and (max-width: 600px) {
@@ -6898,6 +6607,9 @@ header .section-container .image-container .non-active {
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+  }
+  .second .section-container .comment-section {
+    overflow: hidden;
   }
   .second .section-container .comment-section .comment-section-content .comment-number {
     display: flex;
@@ -7396,12 +7108,13 @@ header .section-container .image-container .non-active {
   .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(154, 170, 190);
   }
   .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
   }
   .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content .left .left-content {
@@ -7427,7 +7140,36 @@ header .section-container .image-container .non-active {
   .second .section-container .comment-section .comment-section-content .comment-list .final-bottom-line .second-content h3 {
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 1.3rem;
+    font-size: 1rem;
+  }
+  .second .section-container .bottom-skip {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .second .section-container .bottom-skip .left, .second .section-container .bottom-skip .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .second .section-container .bottom-skip .left a, .second .section-container .bottom-skip .right a {
+    color: #cfceca;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    letter-spacing: 0.3ch;
+    font-size: 0.8rem;
+    transition: all 400ms ease-in-out;
+    transform-origin: left;
+  }
+  .second .section-container .bottom-skip .left a:hover, .second .section-container .bottom-skip .right a:hover {
+    scale: 1.04;
+  }
+  .second .section-container .bottom-skip .left .text, .second .section-container .bottom-skip .right .text {
+    font-family: "Baskervville", serif;
+    font-size: 1rem;
+    letter-spacing: 0ch;
+    text-transform: capitalize;
+    color: #231f20;
   }
 }
 @media screen and (max-width: 500px) {
